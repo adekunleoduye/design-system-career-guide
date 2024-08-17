@@ -32,15 +32,7 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
   <script>
     // https://gist.github.com/konklone/9968713
-    (function (root) {
-      "use strict";
-      var h = root ? root.location.hostname : "",
-        p = root ? root.location.protocol : "";
-      if ("http:" === p && !(/^careerjourney.design.systems/).test(h)) {
-        root.location.protocol = "https:";
-      }
-    }
-      ("undefined" !== typeof window ? window : this));
+    console.log("protocol", window.location.protocol);
   </script>
 </head>
 <body>
